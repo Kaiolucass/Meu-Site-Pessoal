@@ -1,0 +1,245 @@
+/* Reset Básico */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #242426;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #e63946;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #e63946;
+}
+
+header .btn {
+    background-color: #e63946;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #007b9e;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#home .intro h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+#home .intro span {
+    color: #e63946;
+    font-weight: bold;
+}
+
+#home .intro p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+#home .profile-pic {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #e63946;
+}
+
+/* Sobre Mim */
+#about {
+    padding: 50px 0;
+    background-color: #2d2d2f;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #e63946;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Habilidades */
+#skills {
+    padding: 50px 0;
+    background-color: #1c1c1e;
+}
+
+#skills h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #e63946;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    min-width: 300px;
+    background-color: #2d2d2f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill h3 {
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.skill ul li {
+    margin: 10px 0;
+}
+
+/* Histórico de Trabalho */
+#work-history {
+    padding: 50px 0;
+    background-color: #2d2d2f;
+}
+
+#work-history h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #e63946;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-item {
+    background-color: #1c1c1e;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.timeline-item h3 {
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+/* Projetos */
+#projects {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #1c1c1e;
+}
+
+#projects h2 {
+    font-size: 2em;
+    color: #e63946;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #2d2d2f;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    flex: 1;
+    text-align: left;
+}
+
+.project-card h3 {
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+/* Contato */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #2d2d2f;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #e63946;
+    margin-bottom: 30px;
+}
+
+#contact ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #242426;
+    color: #ffffff;
+    font-size: 0.9em;
+}
