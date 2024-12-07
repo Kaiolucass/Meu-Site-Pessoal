@@ -1,123 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaio | Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio do Kaio</title>
+    <link rel="icon" href="assets/IMG/favicon.jpg" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- CSS Principal -->
+    
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
+    <div class="container mt-5">
+        <!-- Cabeçalho -->
         <header>
-            <h1>KAIO LUCAS</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#work-history">Histórico</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <h1 class="navbar">KAIO LUCAS</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#work-history">Histórico</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                                        <i class="fa-solid fa-sun"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <a  href="assets/docs/Meu Currículo .pdf" download="Curriculo_Kaio.pdf"type="button" class="btn btn-outline-verde">Baixar Curriculo</a>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <button class="btn">Baixar Currículo</button>
+            
         </header>
 
         <!-- Home Section -->
-        <section id="home">
-            <div class="intro">
-                <h2>Olá, Eu Sou <span>Kaio Lucas Araújo Silva</span></h2>
-                <p>Desenvolvedor Web e estudante de Ciências da Computação com habilidades em criação de soluções criativas e tecnológicas.</p>
-                <img src="sua-foto.jpg" alt="Kaio Lucas" class="profile-pic">
-            </div>
+        <section id="home" class="py-5 text-center">
+            <h1 class="display-4">Olá, Eu Sou <span>Kaio Lucas Araújo Silva</span></h1>
+            <p class="lead">Desenvolvedor Web e estudante de Ciências da Computação com habilidades em criação de soluções criativas e tecnológicas.</p>
+            <img src="assets/img/Desenvolvedor_FullStack_Kaio_Lucas.png.png" alt="Kaio Lucas" class="profile-pic img-fluid rounded-circle">
         </section>
 
         <!-- Sobre -->
-        <section id="about">
-            <h2>Sobre Mim</h2>
-            <p>Sou um estudante do 5º semestre de Ciências da Computação no CEUB, com experiência em desenvolvimento de projetos web, liderança de equipes e uma paixão por ensinar e aprender. Meu objetivo é contribuir para o crescimento de empresas aplicando habilidades técnicas e de comunicação.</p>
-        </section>
-
-        <!-- Habilidades -->
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <h3>Tecnologias</h3>
-                    <ul>
-                        <li>Planilhas: 50%</li>
-                        <li>Textos: 50%</li>
-                        <li>Apresentações: 50%</li>
-                        <li>HTML/CSS: 80%</li>
-                        <li>Python: 70%</li>
-                        <li>SQL: Básico</li>
-                        <li>Java: Básico</li>
-                        <li>Flask: Básico</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Experiências</h3>
-                    <ul>
-                        <li>Desenvolvimento e gerenciamento de programas</li>
-                        <li>Liderança</li>
-                        <li>Organização</li>
-                        <li>Instrução em grupo</li>
-                        <li>Boa comunicação</li>
-                    </ul>
-                </div>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center  fw-bold">Sobre Mim</h2>
+                <p>Sou um estudante do 5º semestre de Ciências da Computação no CEUB, com experiência em desenvolvimento de projetos web, liderança de equipes e uma paixão por ensinar e aprender. Meu objetivo é contribuir para o crescimento de empresas aplicando habilidades técnicas e de comunicação.</p>
             </div>
         </section>
 
+        <!-- Habilidades -->
+        <section id="skills" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4  fw-bold">Habilidades</h2>
+                <div class="row g-4">
+                    <!-- Coluna Tecnologias -->
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-body">
+                                <h3 class="card-title">Tecnologias</h3>
+                                <ul class="list-unstyled">
+                                    <li>Planilhas: 50%</li>
+                                    <li>Textos: 50%</li>
+                                    <li>Apresentações: 50%</li>
+                                    <li>HTML/CSS: 80%</li>
+                                    <li>Python: 70%</li>
+                                    <li>SQL: Básico</li>
+                                    <li>Java: Básico</li>
+                                    <li>Flask: Básico</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Coluna Experiências -->
+                    <div class="col-md-6">
+                        <div class="card  border-0 shadow-lg">
+                            <div class="card-body">
+                                <h3 class="card-title  fw-bold">Experiências</h3>
+                                <ul>
+                                    <li>Desenvolvimento e gerenciamento de programas</li>
+                                    <li>Liderança</li>
+                                    <li>Organização</li>
+                                    <li>Instrução em grupo</li>
+                                    <li>Boa comunicação</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
         <!-- Histórico de Trabalho -->
-        <section id="work-history">
-            <h2>Histórico de Trabalho</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Monitor de Curso de Informática - Jovens e Idosos</h3>
+        <section id="work-history" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center  fw-bold">Histórico de Trabalho</h2>
+                <div class="timeline">
+                    <div>
+                        <h3>Monitor de Curso de Informática - Jovens e Idosos</h3>
                     <p><strong>CEUB, Brasília</strong> (Ago/2022 - Dez/2022)</p>
                     <ul>
                         <li>Desenvolvi apresentações didáticas interativas, resultando em um aumento de 50% na retenção dos alunos.</li>
-                        <li>Planejei e alcancei metas de aprendizado a curto e longo prazo.</li>
-                        <li>Resolvi conflitos garantindo um ambiente harmonioso.</li>
-                        <li>Implementei um sistema de acompanhamento de faltas e pontualidade.</li>
+                        <li>Desenvolvi e acompanhei metas de aprendizado de curto e longo prazo, promovendo progresso consistente.</li>
+                        <li>Desenvolvi estratégias para gerenciar e resolver conflitos, assegurando um ambiente colaborativo e harmonioso.</li>
+                        <li>Desenvolvi e implementei um sistema de acompanhamento de faltas e pontualidade, fortalecendo a disciplina e a organização no curso.</li>
                     </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Projetos -->
-        <section id="projects">
-            <h2>Sites Criados por Mim</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Site de Fotos de Gatinhos</h3>
-                    <p>Um site em HTML5 para treino de boas práticas de layout e responsividade.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Menu para uma Cafeteria</h3>
-                    <p>Site criado com HTML5 e CSS3, utilizando técnicas modernas de design responsivo.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Pub Temático</h3>
-                    <p>Desenvolvimento de um site para pubs com integração de CSS avançado e identidade visual marcante.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Sistema de Montagem de Computadores (IkPC)</h3>
-                    <p>Simulador para montagem de PCs personalizados com HTML5, CSS e Flask para uma interface intuitiva e responsiva.</p>
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center  fw-bold">Sites Criados Por Mim</h2>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info-card shadow">
+                            <i class="fa-solid fa-cat fa-2x"></i>
+                            <h5>Site de Fotos de Gatinhos</h5>
+                            <p>Um site em HTML5 para treino de boas práticas de layout e responsividade.</p>
+                            <button type="button" class="btn btn-outline-verde">Ver no Github</button>
+                        </div>
+                    </div>
+        
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info-card shadow">
+                            <i class="fa-solid fa-mug-hot fa-2x"></i>
+                            <h5>Menu para uma Cafeteria</h5>
+                            <p>Site criado com HTML5 e CSS3, utilizando técnicas modernas de design responsivo.</p>
+                            <a href="https://github.com/Kaiolucass/estudando-programa-ao-web"type="button"target="_blank" class="btn btn-outline-verde">Ver no Github</a>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info-card shadow">
+                            <i class="fa-solid fa-beer-mug-empty fa-2x"></i>
+                            <h5>Pub Temático</h5>
+                            <p>Desenvolvimento de um site para pubs com integração de CSS avançado e identidade visual marcante.</p>
+                            <a href="https://github.com/kaiolucas01/Novo-Pub"type="button"target="_blank" class="btn btn-outline-verde">Ver no Github</a>
+                        </div>
+                    </div>
+        
+                    <!-- Card 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info-card shadow">
+                            <i class="fa-solid fa-desktop fa-2x"></i>
+                            <h5>KitPC</h5>
+                            <p>Site para montagem de computadores personalizados com HTML5, CSS e Flask para uma interface intuitiva e responsiva.</p>
+                            <a href="https://github.com/Kaiolucass/projeto-integrador"type="button"target="_blank" class="btn btn-outline-verde">Ver no Github</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        
+ <!-- Projetos -->
+ <section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center  fw-bold">Jogos Criados Por Mim</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="info-card shadow">
+                    <i class="fa-solid fa-hashtag fa-2x"></i>
+                    <h5>Jogo da velha</h5>
+                    <p>Um jogo que envolve duas pessoas, completando espaços vazios do tabuleiro com X ou O.</p>
+                    <button type="button" class="btn btn-outline-verde">Ver no Github</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="info-card shadow">
+                    <i class="fa-solid fa-gamepad fa-2x"></i>
+                    <h5>Jogo da cobrinha</h5>
+                    <p>É um jogo eletrônico que tem como objetivo fazer a cobra crescer o máximo possível.</p>
+                    <a href="https://github.com/Kaiolucass/estudando-programa-ao-web"type="button"target="_blank" class="btn btn-outline-verde">Ver no Github</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="info-card shadow">
+                    <i class="fa-solid fa-table-tennis-paddle-ball fa-2x"></i>
+                    <h5>Ping Pong</h5>
+                    <p>É um jogo eletrônico em duas dimensões que simula um tênis de mesa.</p>
+                    <a href="https://github.com/kaiolucas01/Novo-Pub"type="button"target="_blank" class="btn btn-outline-verde">Ver no Github</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="info-card shadow">
+                    <i class="fa-solid fa-hashtag fa-2x"></i>
+                    <i class="fa-solid fa-hashtag fa-2x"></i>
+                    <h5>jogo da velha 2</h5>
+                    <p>É uma atualizaçao do tradicional jogo da velha.</p>
+                    <a href="https://github.com/Kaiolucass/projeto-integrador"type="button"target="_blank" class="btn btn-outline-verde">Ver no Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Contato -->
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo:</p>
-            <ul>
-                <li>Telefone: (61) 99593-8558</li>
-                <li>Email: <a href="mailto:kaisolua22@gmail.com">kaisolua22@gmail.com</a></li>
-                <li>Endereço: Brasília, Cidade Planaltina (DF), 73360-503</li>
-            </ul>
+        <section id="contact" class="py-5 text-center">
+            <div class="container">
+                <h2 class="section-title">Contato</h2>
+                <p>Entre em contato comigo:</p>
+                <ul class="list-unstyled">
+                    <li>Telefone: (61) 99593-8558</li>
+                    <li>Email: <a href="mailto:kaisolua22@gmail.com">kaisolua22@gmail.com</a></li>
+                </ul>
+            </div>
         </section>
 
         <!-- Footer -->
@@ -125,8 +236,22 @@
             <p>© 2024 Kaio Lucas Araújo Silva. Todos os direitos reservados.</p>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+<!-- Script para acionar Popover-->
+<script>
+	var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+	var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+	  return new bootstrap.Popover(popoverTriggerEl)
+	})
+/*Rotina Para modo noturno*/
+const inputCheck = document.querySelector("#modo-noturno");
+const elemento = document.querySelector("body");
+inputCheck.addEventListener('click', () => {
+	const modo = inputCheck.checked ? 'light' : 'dark'
+	elemento.setAttribute("data-bs-theme", modo);
+})
+</script>
 </body>
-</html>
-
-
-
+</html>	
